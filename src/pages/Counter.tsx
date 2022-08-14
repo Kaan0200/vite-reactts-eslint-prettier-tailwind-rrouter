@@ -34,5 +34,5 @@ export function Counter(): JSX.Element {
             </a>
           </p>
         </div>
-    );
+  );
 }

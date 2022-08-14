@@ -1,15 +1,13 @@
 import './App.css';
 
 import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 import logo from './logo.svg';
-import { Route, Routes } from 'react-router-dom';
-import { Stack } from './pages/Stack';
 import { Counter } from './pages/Counter';
+import { Stack } from './pages/Stack';
 
 function App() {
-
-
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +17,7 @@ function App() {
           Tailwindcss 🌠 + React Router & <br />
           Eslint 🔥 + Prettier 💄
         </p>
-
+        <div></div>
         <div className="body">
           <Routes>
             <Route path="/" element={<Counter />} />
