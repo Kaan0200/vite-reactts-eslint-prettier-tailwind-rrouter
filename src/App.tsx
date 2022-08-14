@@ -1,35 +1,57 @@
-import './App.css';
-
 import React, { useState } from 'react';
-import { Link, Route, Routes, useMatch, useResolvedPath } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 
-import logo from './logo.svg';
 import { Counter } from './pages/Counter';
 import { Stack } from './pages/Stack';
 
 function App() {
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="header">
+    <div>
+      {/* Header */}
+      <header>
+        <div className="text-4xl text-center leading-relaxed">
           Vite 🚀 + React 🧱 + Typescript 📘 & <br />
           Tailwindcss 🌠 + React Router & <br />
           Eslint 🔥 + Prettier 💄
-        </p>
-        <div>
-          <Link to="/">Counter</Link>
-          <span>🔵🔵🔵</span>
-          <Link to="/stack">Tech Stack</Link>
         </div>
-        <div className="body">
-          <Routes>
-            <Route path="/" element={<Counter />} />
-            <Route path="/stack" element={<Stack />} />
-          </Routes>
+        <div className="w-full border-b-2">
+          <Link className="p-4" to="/">
+            Counter
+          </Link>
+          <Link className="p-4" to="/stack">
+            Tech Stack
+          </Link>
         </div>
       </header>
+      {/* Body */}
+      <div className="body">
+        <Routes>
+          <Route path="/" element={<Counter />} />
+          <Route path="/stack" element={<Stack />} />
+        </Routes>
+      </div>
+      {/* Footer */}
+      <div className="text-center">
+        <p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+          {' | '}
+          <a
+            className="App-link"
+            href="https://vitejs.dev/guide/features.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Vite Docs
+          </a>
+        </p>
+      </div>
     </div>
   );
 }

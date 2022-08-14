@@ -14,25 +14,6 @@ export function Counter(): JSX.Element {
       <p>
         Mess up the code in <code>App.tsx </code> and save the file.
       </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {' | '}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
     </div>
   );
 }
