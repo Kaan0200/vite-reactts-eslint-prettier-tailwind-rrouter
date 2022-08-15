@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 
-import { Counter } from './pages/Counter';
+import { Splash } from './pages/Splash';
 import { Stack } from './pages/Stack';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         </div>
         <div className="w-full border-b-2">
           <Link className="p-4" to="/">
-            Counter
+            Splash & Instructions
           </Link>
           <Link className="p-4" to="/stack">
             Tech Stack
@@ -26,7 +26,7 @@ function App() {
       {/* Body */}
       <div className="body">
         <Routes>
-          <Route path="/" element={<Counter />} />
+          <Route path="/" element={<Splash />} />
           <Route path="/stack" element={<Stack />} />
         </Routes>
       </div>

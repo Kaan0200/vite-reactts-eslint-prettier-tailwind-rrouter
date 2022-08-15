@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-export function Counter(): JSX.Element {
+export function Splash(): JSX.Element {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div className="text-center">
       <button onClick={() => setCount((count) => count + 1)}>
         🪂 Click me : {count}
       </button>
